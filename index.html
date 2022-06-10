@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#68b6ff">
+    <meta property='og:image:width' content='1200'>
+	<meta property='og:image:height' content='627'>
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Animojis">
+  <meta property='og:image' content='assets/thumbnail.png'>
+	<meta property='og:url' content='https://stevewalson.github.io/Profile-Picture-Maker/'>
+    <meta name="web app" content="Animojis : Animal emojis Game"">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animojis : Animal emojis Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="starting_page">
+        <div class="question_modal">
+          <img src="animoji.png" alt="animoji game logo" class="logo" />
+          <h1 class="reward_question">Choose Your Reward</h1>
+          <div class="reward_choices">
+            <button data-text="Bagel" class="reward_choice">&#129391;</button>
+            <button data-text="Pancakes" class="reward_choice">
+              &#129374;
+            </button>
+            <button data-text="Ice Cream" class="reward_choice">
+              &#127846;
+            </button>
+            <button data-text="Doughnut" class="reward_choice">
+              &#127849;
+            </button>
+            <button data-text="Cookie" class="reward_choice">&#127850;</button>
+            <button data-text="Cupcake" class="reward_choice">&#129473;</button>
+            <button data-text="Pie" class="reward_choice">&#129383;</button>
+            <button data-text="Chocolate" class="reward_choice">
+              &#127851;
+            </button>
+            <button data-text="Candy" class="reward_choice">&#127852;</button>
+            <button data-text="Lollipop" class="reward_choice">
+              &#127853;
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal_wrapper">
+        <div class="modal">
+          <h1 class="modal_emoji"></h1>
+          <h1 class="answer"></h1>
+          <h1 class="point">+1 <span class="point_emoji"></span></h1>
+          <div class="buttons">
+            <button class="reset">Restart</button>
+            <button class="play_again">Try Again &#160; &#8634;</button>
+          </div>
+        </div>
+      </div>
+      <div class="score_level">
+        <p class="score">
+          <span class="reward_emoji"></span> &#160;<span
+            class="score_num"
+          ></span>
+        </p>
+        <progress
+          data-text="&#127942;"
+          class="progress"
+          min="0"
+          value="0"
+          max="80"
+        ></progress>
+      </div>
+      <div class="emoji_wrapper">
+        <h1 class="emoji"></h1>
+        <label class="hint_button" for="hint_checkbox">Hint</label>
+        <input type="checkbox" id="hint_checkbox" />
+        <p class="hint_content">it starts with <span class="fst_ltr"></span></p>
+      </div>
+      <h1 class="question">What's My Name ?</h1>
+      <div class="choices">
+        <button class="choice" id="right_choice"></button>
+        <button class="choice" id="choice1"></button>
+        <button class="choice" id="choice2"></button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
