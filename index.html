@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#68b6ff">
-    <meta property='og:image:width' content='1200'>
-	<meta property='og:image:height' content='627'>
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Animojis">
-  <meta property='og:image' content='assets/thumbnail.png'>
-	<meta property='og:url' content='https://github.com/stevewalson/Animojis'>
-    <meta name="web app" content="Animojis : Animal emojis Game">
+    <meta name="theme-color" content="#68b6ff" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Animojis" />
+    <meta property="og:image" content="assets/thumbnail.png" />
+    <meta property="og:url" content="https://github.com/stevewalson/Animojis" />
+    <meta name="web app" content="Animojis : Animal emojis Game" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,7 @@
     <div class="container">
       <div class="starting_page">
         <div class="question_modal">
-          <img src="assets/animojis.png" alt="animoji game logo" class="logo" />
+          <img src="animoji.png" alt="animoji game logo" class="logo" />
           <h1 class="reward_question">Choose Your Reward</h1>
           <div class="reward_choices">
             <button data-text="Bagel" class="reward_choice">&#129391;</button>
@@ -68,13 +68,10 @@
             class="score_num"
           ></span>
         </p>
-        <progress
-          data-text="&#127942;"
-          class="progress"
-          min="0"
-          value="0"
-          max="80"
-        ></progress>
+        <div class="progress_wrapper">
+          <p class="progress_icon">&#127942;</p>
+          <progress class="progress" min="0" value="0" max="80"></progress>
+        </div>
       </div>
       <div class="emoji_wrapper">
         <h1 class="emoji"></h1>
