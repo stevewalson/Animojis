@@ -166,7 +166,7 @@ input {
   font-size: 1.4rem;
   font-weight: 600;
 }
-.progress_wrapper{
+.progress_wrapper {
   display: flex;
   gap: 0.5rem;
   align-items: center;
