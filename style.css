@@ -57,7 +57,7 @@ input {
   padding: 0.5rem;
   box-shadow: 10px 10px 14px #00000028;
   border-radius: 10px;
-  outline: 10px solid #68b6ff;
+  border: 10px solid #68b6ff;
 }
 .logo {
   width: min(50%, 500px);
@@ -134,7 +134,7 @@ input {
   border-radius: 9999px;
   padding: 0.1rem 0.5rem;
   background-color: #fff;
-  outline: 3px solid #68b6ff;
+  border: 3px solid #68b6ff;
 }
 .emoji {
   font-size: 13rem;
@@ -148,7 +148,7 @@ input {
   color: #fff;
   cursor: pointer;
   display: none;
-  outline: 3px solid #ffffff;
+  border: 3px solid #ffffff;
 }
 .hint_content {
   display: none;
@@ -166,22 +166,21 @@ input {
   font-size: 1.4rem;
   font-weight: 600;
 }
+.progress_wrapper{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
 .progress {
   height: 25px;
-  width: 25%;
-  position: relative;
+  width: 80px;
 }
-.progress::before {
-  content: attr(data-text);
+.progress_icon {
   border-radius: 9999px;
   padding: 0.1rem 0.4rem;
   background-color: #fff;
   font-size: 1.4rem;
-  position: absolute;
-  left: -70%;
-  top: 50%;
-  transform: translateY(-50%);
-  outline: 3px solid #68b6ff;
+  border: 3px solid #68b6ff;
 }
 .question {
   font-size: 2.4rem;
@@ -233,7 +232,7 @@ input {
   justify-content: space-evenly;
   box-shadow: 10px 10px 14px #00000028;
   border-radius: 10px;
-  outline: 10px solid #68b6ff;
+  border: 10px solid #68b6ff;
 }
 .modal_emoji {
   font-size: 8rem;
@@ -258,7 +257,7 @@ input {
   padding: 0.7rem 1.6rem;
   font-weight: 700;
   box-shadow: 5px 5px 6px #0000001e;
-  outline: 5px solid #ffffff;
+  border: 5px solid #ffffff;
   color: #fff;
 }
 .reset {
