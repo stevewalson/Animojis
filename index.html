@@ -22,24 +22,6 @@
     <title>Animojis : Animal emojis Game</title>
   </head>
   <body>
-    <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '716251396469802',
-      xfbml      : true,
-      version    : 'v14.0'
-    });
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
     <div class="container">
       <div class="starting_page">
         <div class="question_modal">
@@ -103,12 +85,6 @@
         <button class="choice" id="choice1"></button>
         <button class="choice" id="choice2"></button>
       </div>
-          <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
     </div>
     <script src="index.js"></script>
   </body>
