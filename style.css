@@ -47,7 +47,7 @@ input {
 }
 .question_modal {
   aspect-ratio: 1/1;
-  width: min(90%, 500px);
+  width: min(90%, 520px);
   background: repeating-radial-gradient(#f6e0fa, #f9f2e5 20%);
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@ input {
 }
 .reward_choices {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 0fr);
   gap: 2.8rem 0.6rem;
 }
 .reward_choices > * {
